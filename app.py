@@ -7,12 +7,13 @@ def send():
     data = request.json
     message = data.get("message")
 
+    # چک کردن پیام دریافتی و برگرداندن پاسخ مناسب
     if message == "Get EagleSpy-V5 link":
         return jsonify({"response": "Get EagleSpy-V5 link Link: https://t.me/c/2344120391/214/233"})
     elif message == "Get CraxsRat-7.6 link":
         return jsonify({"response": "Get CraxsRat-7.6 link Link: https://t.me/c/2267427894/620"})
     else:
-        return jsonify({"error": "Invalid request"}), 400
+        return jsonify({"response": "❌ Invalid request. Please try again."})
 
 if __name__ == "__main__":
     from waitress import serve
