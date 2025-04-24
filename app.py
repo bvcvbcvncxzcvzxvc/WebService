@@ -7,7 +7,7 @@ def send():
     data = request.json
     message = data.get("message")
 
-    # چک کردن پیام دریافتی و برگرداندن پاسخ مناسب
+
     if message == "Get EagleSpy-V5 link":
         return jsonify({"response": "Get EagleSpy-V5 link Link: https://t.me/c/2344120391/214/233"})
     elif message == "Get CraxsRat-7.6 link":
