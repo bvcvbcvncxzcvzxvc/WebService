@@ -8,10 +8,10 @@ def send():
     message = data.get("message")
 
 
-    if message == "Get EagleSpy-V5 link":
-        return jsonify({"response": "Get EagleSpy-V5 link Link: https://t.me/c/2344120391/214/233"})
-    elif message == "Get CraxsRat-7.6 link":
-        return jsonify({"response": "Get CraxsRat-7.6 link Link: https://t.me/c/2267427894/620"})
+    if message == "Get instagram-target link":
+        return jsonify({"response": "Get instagram-target link Link: https://t.me/c/2344120391/214/233"})
+    elif message == "Get instagram-target":
+        return jsonify({"response": "Get instagram-target1 link Link: https://t.me/c/2267427894/620"})
     else:
         return jsonify({"response": "❌ Invalid request. Please try again."})
 
